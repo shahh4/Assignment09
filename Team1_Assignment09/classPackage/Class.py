@@ -1,3 +1,14 @@
+#Class.py
+
+# Name: Team #1 (Harsh Shah, Ian Cunningham, and Elizabeth Stapleton)
+# email: shahh4@mail.uc.edu, stapleet@mail.uc.edu, cunninig@mail.uc.edu
+# Assignment Number: Assignment 09
+# Due Date: 04/04/2024
+# Course/Section: IS4010-002
+# Semester/Year: Spring 2024
+# Brief Description of the assignment: This is a class of CIncinnati Weather
+# Anything else that's relevant: Used worked done in class as a reference. 
+
 import requests
 
 class WeatherAPI:
@@ -28,3 +39,4 @@ class WeatherAPI:
         location = "New York"  # Change this to any location you want
         weather_data = self.get_current_weather(location)
         self.extract_interesting_data(weather_data)
+

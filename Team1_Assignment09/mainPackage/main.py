@@ -8,7 +8,7 @@
 # Brief Description of the assignment:
 # Anything else that's relevant: Used worked done in class as a reference. 
 
- 
+
 from classPackage.Class import WeatherAPI
 if __name__ == "__main__":
     
