@@ -45,6 +45,8 @@ if __name__ == "__main__":
     #print(response.json['height'])
 
 '''
+
+'''
 import requests
 
 if __name__ == "__main__":
@@ -79,5 +81,9 @@ if __name__ == "__main__":
     else:
         print(f"Failed to retrieve data from the API. Status code: {response.status_code}")
         print(f"Error message: {response.text}")
+        '''
+        
+        
+        
 
 
