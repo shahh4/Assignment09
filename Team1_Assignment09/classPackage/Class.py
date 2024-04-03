@@ -6,7 +6,7 @@
 # Due Date: 04/04/2024
 # Course/Section: IS4010-002
 # Semester/Year: Spring 2024
-# Brief Description of the assignment: This is a class of CIncinnati Weather
+# Brief Description of the assignment: This is a class of Cincinnati Weather
 # Anything else that's relevant: Used worked done in class as a reference and ChatGPT for reference.
 
 import requests
@@ -56,7 +56,7 @@ class WeatherAPI:
         @param: None
         @return: None
         '''
-        location = "New York"  # Change this to any location you want
+        location = "Cincinnati"  # Change this to any location you want
         weather_data = self.get_current_weather(location)
         self.extract_interesting_data(weather_data)
 
