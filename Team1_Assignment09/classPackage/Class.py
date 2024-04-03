@@ -1,31 +1,10 @@
-import requests
+#Class.py
 
-def get_current_weather(api_key, city):
-    url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}"
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        data = response.json()
-
-        # Extracting relevant information
-        location = data['location']['name']
-        country = data['location']['country']
-        temperature_celsius = data['current']['temp_c']
-        condition = data['current']['condition']['text']
-        wind_speed = data['current']['wind_kph']
-        humidity = data['current']['humidity']
-
-        # Printing weather information
-        print(f"Current weather in {location}, {country}:")
-        print(f"Temperature: {temperature_celsius}°C")
-        print(f"Condition: {condition}")
-        print(f"Wind Speed: {wind_speed} kph")
-        print(f"Humidity: {humidity}%")
-    else:
-        print(f"Failed to fetch weather data. Status code: {response.status_code}")
-
-if __name__ == "__main__":
-    api_key = "d25578a2e46e481fbc311658240304"  # Your WeatherAPI key
-    city = "New York"  # Example city
-
-    get_current_weather(api_key, city)
+# Name: Team #1 (Harsh Shah, Ian Cunningham, and Elizabeth Stapleton)
+# email: shahh4@mail.uc.edu, stapleet@mail.uc.edu, cunninig@mail.uc.edu
+# Assignment Number: Assignment 09
+# Due Date: 04/04/2024
+# Course/Section: IS4010-002
+# Semester/Year: Spring 2024
+# Brief Description of the assignment: This is a class of CIncinnati Weather
+# Anything else that's relevant: Used worked done in class as a reference. 
